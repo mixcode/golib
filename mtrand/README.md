@@ -1,5 +1,5 @@
 
-# Mersenne-Twister Random Number Generator
+# mtrand: A Mersenne-Twister Random Number Generator
 
 This Go package contains Mersenne-Twister Random Number Generators of 32-bit and 64-bit.
 
