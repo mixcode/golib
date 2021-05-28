@@ -185,6 +185,7 @@ func (mt *MT32) GenReal3() float64 {
 
 // generates a random number on [0,1) with 53-bit resolution
 func (mt *MT32) GenRes53() float64 {
+	// These real versions are due to Isaku Wada, 2002/01/09 added
 	a, b := mt.GenUint32()>>5, mt.GenUint32()>>6
 	return (float64(a)*67108864.0 + float64(b)) * (1.0 / 9007199254740992.0)
 }
