@@ -1,0 +1,9 @@
+
+
+* Note: actual libs are on separate repos, and added here using git-subtree
+
+* Addresses of original repos
+
+	mtrand: github.com/mixcode/golib-mtrand
+	cbccts: github.com/mixcode/golib-cbccts
+
