@@ -8,15 +8,15 @@ A modified go "encoding/json" package that writes struct field names in snake_ca
 type st struct {
 	Name          string
 	AnotherName   string
-	ExplicitCamel string `json:"ExplicitCamel"`
-	ExplicitSnake string `json:"explicit_snake"`
+	ExplicitCamel string `json:"ExplicitCamel"`  // value name explicitly set
+	ExplicitSnake string `json:"explicit_snake"` // value name explicitly set
 	Empty         int
 }
 
 in := st{"name", "another_name", "camel", "snake", 0}
 
 // encode with snake case
-encoded, err := MarshalSnakeCase(&in, false) // MarshalSnakeCase() encodes json in snake_case style
+encoded, err := MarshalSnakeCase(&in, false) // MarshalSnakeCase() encodes json in snake_case style by default.
 if err != nil {
 	panic(err)
 }
