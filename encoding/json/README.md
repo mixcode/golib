@@ -16,7 +16,7 @@ type st struct {
 in := st{"name", "another_name", "camel", "snake", 0}
 
 // encode with snake case
-encoded, err := MarshalSnakeCase(&in, false)
+encoded, err := MarshalSnakeCase(&in, false) // MarshalSnakeCase() encodes json in snake_case style
 if err != nil {
 	panic(err)
 }
