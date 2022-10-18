@@ -1,6 +1,10 @@
 
 # github.com/mixcode/golib/
 
+!! THIS PACKAGE PATH IS DEPRECATED!!
+
+ Use golib-XXXX version of the libraries instead.
+
 A placeholder for small go library packages.
 
 
